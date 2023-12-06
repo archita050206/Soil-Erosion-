@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" vontent="IE=edge"/>
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <title>Soil Erosion</title>
+    <style>
+:root{
+    --neutral: #232946;
+--base-100: #fffffe;
+--neutral-focus: #121629;
+}
+*{
+margin:0;
+}
+
+body{
+font-family: times new roman;
+background: var(--neutral);
+}
+
+h1,h2,h3,h4,h5,h6{font-family: times new roman;}
+h1{font-size: 60px;}
+
+#nav-bar{
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color:#4DD0E5 ;
+padding: 20px 0;
+font-size: 18px;
+border-bottom: 1px solid var(--neutral-focus);
+
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    font-family:serif;
+
+}
+.nav-links a{text-align: center;
+text-decoration: none;
+padding: 0 10px;
+color: black;}
+
+#pic{height: 230px;
+width: 400px;
+}
+
+
+.nav-links a:hover{
+text-decoration: underline;
+}
+
+section{
+min-height: 100vh;
+padding: 40px 0;}
+
+#soil-erosion{text-align: center;
+background-color: var(--neutral);
+color: var(--base-100);
+display:  flex;
+flex-direction: column;
+}
+
+#soil-erosion h1{margin-top: 23vh;}
+#soil-erosion p{color: var(--accent);
+font-size: 25px;
+margin: 50px 0;
+padding-left: 110px;
+padding-right: 110px;
+line-height: 40px;
+}
+#causes{background-color: #C2FFFF;
+font-family: times new roman;
+padding-left: 90px;
+padding-right: 440px;
+}
+
+}
+#causes ol{ 
+font-size:20px;
+}
+#causes h1{padding: 29px;
+padding-top: 70px;
+}
+.ox{font-size:32px;
+font-weight: bolder;}
+
+#yo{text-align: left;
+line-height: 40px;}
+
+#lalaland{
+background-color: #F8DE7E;
+padding-left: 110px;
+padding-right: 200px;
+}
+#lalaland h1{padding-bottom:40px;
+padding-top: 50px;}
+#d{font-size: 18px;}
+.t{font-size:20px;
+font-weight: bolder;}
+#goals{background-color: #BC8F9F;
+padding-left: 110px;
+padding-right: 200px;}
+#mu{font-size:20px;}
+#goals h1{padding-bottom:40px;
+padding-top: 50px;
+}
+#results{background-color:#B592EC;
+}
+#v{text-align: left;}
+#results h1{padding-top: 40px;
+padding-bottom: 20px;
+}
+#suit{padding-left:200px;
+padding-right:200px;
+line-height:25px;
+font-size:18px;}
+#you{padding-left:200px;
+padding-right:200px;
+line-height:25px;
+font-size:18px;}
+#sustainable-development{background-color:#452C4A;
+color: white;
+}
+#sustainable-development .yes{
+height:280px;
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+background-color:#A481EC;
+color:black;
+border-radius: 5px;
+box-shadow: 8px 8px 10px 5px rgba(100,100,100,0.2);
+text-decoration: none;
+}
+#sustainable-development .yes img{
+height: 80%;
+width: 100%;
+object-fit: cover;}
+#sustainable-development .sustainable-development{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+gap:30px;
+padding:20px;
+place-items:center;
+max-width:1200px;
+margin:auto;
+}
+#sustainable-development h1{padding-bottom:50px;
+padding-top:50px;}
+#sustainable-development .yes p{
+font-size:21px;
+padding: 8px;
+}
+#sustainable {background-color:#452C4A;
+color: white;}
+#sustainable .no{
+height:280px;
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+background-color:#A481EC;
+color:black;
+border-radius: 5px;
+box-shadow: 8px 8px 10px 5px rgba(100,100,100,0.2);
+text-decoration: none;
+}
+#sustainable .no img{
+height: 80%;
+width: 100%;
+object-fit: cover;}
+#sustainable .sustainable{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+gap:30px;
+padding:20px;
+place-items:center;
+max-width:1200px;
+margin:auto;
+}
+#sustainable .no p{
+font-size:21px;
+padding: 8px;
+}
+
+#sus {background-color:#452C4A;
+color: white;}
+#sus .nono{padding-top:20px;
+height:280px;
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+background-color:#A481EC;
+color:black;
+border-radius: 5px;
+box-shadow: 8px 8px 10px 5px rgba(100,100,100,0.2);
+text-decoration: none;
+}
+#sus .nono img{
+height: 80%;
+width: 100%;
+object-fit: cover;}
+#sus .sus{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+gap:30px;
+padding:20px;
+place-items:center;
+max-width:1200px;
+margin:auto;
+}
+#sus .nono p{
+font-size:21px;
+padding: 8px;
+}
+#earth{
+height:270px;
+padding-top: 40px;}
+#conclusion{text-align:center;
+background-color:#370D31;
+color: white;
+}
+#conclusion p{font-size: 20px;
+line-height:28px;
+padding-left:200px;
+padding-right:200px;
+}
+#conclusion h1{padding-top:37px;
+padding-bottom:40px;}
+
+#contact{
+background-color: powderblue;}
+
+#contact{ }
+#contact h1{padding-top:37px;
+padding-bottom:60px;}
+#contact{font-size: 18px;
+line-height:28px;
+padding-left:250px;
+padding-right:250px;}
+#gojo{ text-align: center;
+background-color: #500040;
+color: white;}
+#gojo h1{padding-top: 40px;
+padding-bottom: 50px;}
+#gojo p{font-size: 20px;
+line-height: 30px; 
+padding-left: 200px;
+padding-right: 200px;}
+#xx{height: 220px;}
+#nn{height: 220px;}
+#me{
+text-align: center;
+background-color: #B49BB4;}
+#me h1{ padding-top: 40px;
+padding-bottom: 8px;
+}
+#me p{padding-right: 200px;
+padding-left: 200px;
+font-size: 20px;
+line-height: 25px;
+
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#soil-erosion" class="nav-link">Soil Erosion</a></li>
+                <li><a href="#goals" class="nav-link">Goals</a></li>
+                <li><a href="#results" class="nav-link">Soil Conservation</a></li>
+<li><a href="#contact" class="nav-link">Environment</a></li>
+                <li><a href="#sustainable-development" class="nav-link">Sustainable Development</a></li><li><a href="#gojo" class="nav-link">Environmental Activism</a></li>
+                <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+<section id="soil-erosion">
+	<h1>Degradation of Land: Soil Erosion</h1>
+	<p>Soil Erosion is the movement of soil components, especially surface litter and top soil from one place to another. Soil erosion results in the loss of fertility since it is the top soil which is fertile. It is caused both by natural agents like wind and water or by anthropogenuc activities which include deforestation, mining and overgrazing.</p>
+<center><img id="pic" src="https://d1g9yur4m4naub.cloudfront.net/image-handler/picture/2020/4/shutterstock_433561669.jpg"></img>
+<figcaption><i>Fig:</i> Soil Erosion</figcaption></center>
+</section>
+<section id="causes">
+<h1>Types of Soil Erosion:</h1>
+<br>
+<ol id="yo" type="a">
+<li class="ox">Normal erosion:</li><p style="font-size: 25px;">These are caused by natural processes which bring an equilibrium between the physical, hydrological and biological activities and maintain a natural balance between erosion and renewal. This is caused by the gradual removal of the top soil. The main causes of normal or geologic erosion are wind, liquid water and ice</p>
+<br>
+<br>
+<li class="ox">Accelerated erosion:</li><p style="font-size: 25px;"> This is mainly caused my anthropogenic activities and the rate of erosion is much higher than the rate of formation of soil. It is mainly caused by human activities like mining, grazing etc.</p></ol>
+</section> 
+<section id="lalaland">
+<h1>Causes of Soil Erosion:</h1><div id="d">
+<p style="font-size: 20px"><b>Soil erosion is mainly caused by two types of agents:</b></p><br>
+<ol type="a">
+<li class="t">Climatic agents: </li><br><p>The climatic agents causing soil erosion include wind and water. Water affects soil in the form of surface-runoff, torrential rain, rapid flow of water along slopes and the melting and movement of snow.</p><br>
+<p>Types of water induced soil erosion:</p><br>
+<ul type="disc"><li><b>Sheet erosion:</b> It is the uniform removal of a thin layer of soil, usually done due to run-off water.</li>
+<li><b>Rill erosion:</b> Here, finger shaped grooves or rills are produced caused by heavy rainfall and rapidly running water.</li>
+<li><b>Gully erosion:</b> It is a prominent type of erosion where deep U or V shaped gullies are formed dues to very heavy rainfall.</li>
+<li><b>Slip erosion:</b> Occurs due to heavy rainfall on slopes of hills and mountains.</li>
+<li><b>Stream bank erosion:</b> Caused by fast running streams taking a turn in some direction which leads to formation of caves in the banks.</li></ul><br>
+<p>Types of soil movements by wind erosion:</p><br>
+<ul type="disc"><li><b>Saltation:</b> Soil particles of diameter 1 to 1.5 mm move up in vertical direction under influence of direct pressure of stormy wind</li>
+<li><b>Suspension:</b> Soil particles of diameter less than 1 mm are suspended in the air and taken away to distant places</li>
+<li><b>Surface creep:</b> Larger particles of diameter 5mm to 10mm creep over the soil surface along with wind</li></ul><br>
+<li class="t">Biotic agents:</li><br><p> Excessive grazing, mining and deforestation are the major biotic agents responsible for soil erosion. These processes cause the disturbance of the fertile top soil which is then rendered useless.</p></ol></div>
+</section>
+<section id="goals">
+<h1>Goals of the Project:</h1><br><div id="mu">
+<p>Soil Erosion is a concern not only for its impacts on plant growth, but also for its impacts to water quality. Soil is a valuable natural resource that nourishes and supports plant growth among many other things. When soil is left bare and exposed, wind and water can erode it. When the rate of erosion of soil is more than that of formation of soil, then it no longer remains a renewable source of energy.</p><br><h3>Thus to conserve soil, the Goal of our project is :</h3><br>
+<ul type="disc">
+<li>Creating awareness about soil erosion and its impacts on our daily lives</li>
+<li>Educating people about what soil erosion is and how to reduce it.</li>
+<li>To make people aware of the effects soil erosion has specifically on agriculture and wildlife</li></ul><br>
+<h3>Methods adapted to achieve these goals:</h3><br>
+<p>This includes making use of:</p><br>
+<ul><li>Social media platforms like instagram, facebook and youtube</li>
+<li>Modern internet technology</li>
+<li>Mass media platforms like newspapers, ebooks, magazines, television</li></ul><br>
+<p>Sharing posts about soil erosion, pamphlets, websites including ours so that it intrigues people and makes them curious to know more about it and hence this would lead to mass awareness.</p></div></section>
+<section id="results">
+<center><h1>Soil Conservation: Prevention of Soil Erosion</h1><br><div id="suit">
+<blockquote><em>"Essentially, all life depends upon the soil... There can be no life without soil and no soil without life; They have evolved together"</em>
+</blockquote>
+<p>Soil Conservation refers to the methods involved in preventing soil erosion, denudation, degradation, and pollution. Soil is one of the most important natural resource for survival of life on earth and it is the duty of every individual to conserve and preserve it.</p><br></center>
+<div id="you"><h2>Soil Conservation techniques:</h2><br>
+<ol type="a">
+<h3><li>Conservational Till Farming:</li></h3>
+<p>It is also referred to as no-till-farming and it causes minimum disturbance to the top soil. Here special tillers are used to break up and loosen the subsurface soil without turning over the topsoil. The tilling machines make slits in the unploughed soil and inject seeds, fertilizers, herbicides and a little water in the slit so that the seed germinates and the crop grows successfully.</p>
+<h3><li>Contour Farming:</li></h3>
+<p>On gentle slopes, the crops are grown in rows horizontally instead of up and down. Each such row acts as a small dam to help hold soil and slow down the loss of water through run off water.</p>
+<h3><li>Terracing:</li></h3>
+<p>In case of still steeper slopes, the slope is converted into a series of broad terraces which run across the contour. It retains water for crops at all levels and cuts down soil erosion by controlling run off.</p>
+<h3><li>Strip Cropping:</li></h3>
+<p>Strips of crops are alternated with strips of soil having covercrops like grasses or grass-legume mixture. The runoff coming from the cropped soil is retained by the strip of cover crop adn it reduces soil erosion.</p>
+<h3><li>Alley Cropping:</li></h3>
+<p>It is also referred to as Agro Forestry. It is a form of inter cropping in which crops are planted between rows of trees or shrubs so that even if the crops are not present, the other trees presennt will bind to the soil and prevent soil erosion.</p>
+<h3><li>Wind Breaks:</li></h3>
+Also referred to as shelterbelts, here trees are planted along the boundary of the cultivated land. This helps in reducing soil erosion caused by strong winds as the trees block the winds.</p></ol></div></div>
+</section>
+<section id="contact">
+<center><h1>Our Environment</h1>
+<p>Environment is defined as the sum total of water, air and land and the inter-relationships that exist among them and with the human beings, other living organisms and materials. It includes everything that surrounds and affects all living organisms.</p><br><br>
+<h2>Environmental Studies</h2><br>
+<p>Environmental studies is a multidisciplinary academic field which systematically studies human interaction with the environment. Environmental studies connects principles from the physical sciences, commerce or economics, humanities, and social sciences to address complex contemporary environmental issues. It is a broad field of study that includes the natural environment, the built environment, and the relationship between them. </p><br><br>
+<h2>Issues related to our Environment</h2><br>
+<p>Issues like global warming, depletion of ozone layer, dwindling forests and energy resources, loss of global biodiversity etc. are going to affect mankind and all other life sources on the earth. Excessive use of fossil fuels, pollution and many other factors are rising due to many reasons which are having an adverse effect on the environment.</p></center>
+</section>
+<section id="sustainable-development">
+<center><h1>Sustainable Development</h1>
+<p style="padding=bottom:40px; line-height:28px; font-size: 23px;padding-left:200px;padding-right:200px;">Sustainable development can be defined as an approach to the economic development of a country without compromising with the quality of the environment for future generations. In the name of economic development, the price of environmental damage is paid in the form of land degradation, soil erosion, air and water pollution, deforestation, etc. This damage may surpass the advantages of having more quality output of goods and services.</p><br><br>
+</center>
+<div class="sustainable-development">
+<a href="https://sdgs.un.org/goals/goal1" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-no-poverty5222.jpg" alt=""><p><span></span>No Poverty<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal2" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-zero-hunger7952.jpg" alt=""><p><span></span><span>Zero Hunger</span></p></a>
+<a href="https://sdgs.un.org/goals/goal3" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-good-health-and-well-being6797.jpg" alt=""><p><span></span>Good Health and Wellbeing<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal4" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-quality-education7536.jpg" alt=""><p><span></span>Quality Education<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal5" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-gender-equality3984.jpg" alt=""><p><span></span>Gender Equality<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal6" class="yes">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-clean-water-and-sanitation3193.jpg" alt=""><p><span></span>Clean Water and Sanitation<span></span></p></a></div></section>
+
+<section id="sustainable"><div class="sustainable">
+<a href="https://sdgs.un.org/goals/goal7" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-affordable-and-clean-energy9115.jpg" alt=""><p><span></span>Affordable and Clean Energy<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal8" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-decent-work-and-economic-growth7310.jpg" alt=""><p><span></span><span>Decent Work and Economic Growth</span></p></a>
+<a href="https://sdgs.un.org/goals/goal9" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-industry-innovation-and-infrastructure5124.jpg" alt=""><p><span></span>Industry, Innovation and Infrastructure<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal10" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-reduced-inequalities7995.jpg" alt=""><p><span></span>Reduced Inequalities<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal11" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-sustainable-cities-and-communities5102.jpg" alt=""><p><span></span>Sustainable Cities and Communities<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal12" class="no">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-responsible-consumption-and-production8216.jpg
+" alt=""><p><span></span>Responsible Consumption and Production<span></span></p></a></div></section>
+
+<section id="sus"><div class="sus">
+<a href="https://sdgs.un.org/goals/goal13" class="nono">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-climate-action7047.jpg" alt=""><p><span></span>Climate Action<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal14" class="nono">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-life-below-water4186.jpg" alt=""><p><span></span><span>Life Below Water</span></p></a>
+<a href="https://sdgs.un.org/goals/goal15" class="nono">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-life-on-land9134.jpg" alt=""><p><span></span>Life on Land<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal16" class="nono">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-peace-justice-and-strong-iinstitutions2982.jpg" alt=""><p><span></span>Peace, Justice and Strong Institutions<span></span></p></a>
+<a href="https://sdgs.un.org/goals/goal17" class="nono">
+<img src="https://logowik.com/content/uploads/images/the-global-goals-partnership-for-the-goals-black6248.jpg" alt=""><p><span></span>Partnerships for the Goals<span></span></p></a>
+
+</a></div></section>
+<section id="gojo"><h1>Environmental Activism</h1>
+<p>The term “environmental activism” is defined as the actions of individuals or groups that protect or aid the environment. Those involved in the movement identify issues that threaten the planet’s viability, from community to global concerns, and then develop strategies to promote awareness or produce solutions that directly address the problem.
+There are several ways to undertake this, from local grassroots strategies to nationwide campaigns. In some cases, advocating for the environment can also include other important activism, such as civic and social justice. Environmental activism can also be executed creatively. In the project Planet Ocean, artist Thirza Schaap highlights the problem of plastic waste by building sculptures made exclusively from plastic debris collected from South African beaches.</p><br>
+<p>Regardless of how it’s performed, the goal of environmental activism is clear: to create a harmonious living environment that can be handed down from generation to generation without succumbing to poor human stewardship.
+</p><br><br><img id="xx" src="https://theowp.org/wp-content/uploads/2021/10/pexels-markus-spiske-2990650-800x533.jpg"></section>
+<section id="me">
+<h1>Greta Thunberg</h1>
+<h2 style="font-size: 30px">The youngest Environmental Activist</h3><br><br>
+<p>Greta Thunberg is a Swedish environmental activist and founder of Fridays for Future. Fridays For Future has been named UN Environment Programme Champion of the Earth, its highest recognition, awarded annually.
+She first learned about climate change when she was eight. In summer 2018 she held the first "School Strike for Climate" outside the Swedish parliament.
+
+The protest was widely covered, and hundreds of thousands of young people across the world joined her Fridays For Future strikes. Although alone for the first day of the strike, she was joined each subsequent day by more and more people, and her story garnered international attention. Thunberg received numerous invitations to speak about climate change. She gave speeches at the World Economic Forum in Davos, Switzerland, and at the European Parliament as well as in front of the legislatures of Italy, France, the United Kingdom, and the United States. In September 2019 her appearance at a UN climate event in New York City—which she traveled to on an emissions-free yacht—drew particular attention for her impassioned comments
+</p><br><br><img id="nn" src="	https://s.abcnews.com/images/US/climate-change-rally-charlotte-05-rtr-jc-191108_hpMain_16x9_992.jpg"><b><figcaption>Greta Thunberg</figcaption></b></section>
+</section>
+<section id="conclusion">
+<h1>Conclusion</h1>
+<p>Soil is the base on which 'life' resides on the earth. It is one of the most important natural resource as it not only supports life, but supports many other aspects which are important for the survival of life on the earth: growth and development of plants, home for microbes maintaining environmental balance, plays an important role in the hydrological cycle, supports many other activities like nesting, hatching, breeding etc. Hence it is essential for the survival of life.</p>
+<p>Soil erosion occurs when the rate of erosion of soil is much more compared to the rate of formation of soil. If this goes on, then soil will no longer be a renewable natural resource as the formation of soil requires millions of years. It has adverse impacts not only on mankind, but on all other forms of life. </p>
+<p>Thus soil erosion is one of the world's most critical problems and if not slowed down, it will seriously reduce agriculture, and forestry production and degrade the quality of aquatic ecosystems as well due to increased siltation. Hence it is the duty of every individual to protect and conserve soil so the our future generations do not have to face any problem and that our 'Mother Earth' stays happy and lively throughout.</p>
+<center><img id="earth" src="https://cdn.mos.cms.futurecdn.net/yCPyoZDQBBcXikqxkeW2jJ.jpg" alt="Mother Earth">
+<figcaption style="font-size: 18px"><b><em>'Every day is Earth Day'</em></b></figcaption></center>
+</section>
+
